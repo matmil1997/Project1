@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Photon extends Formula{
+	public void calculate(){
+	System.out.println("This formula is for the Energy of a Photon:");
+    System.out.println("E=hf");
+    System.out.println("Enter value for f");
+    double E;
+    int f;
+    Scanner input = new Scanner(System.in);
+    String str = input.nextLine();
+    System.out.println("f = " + str);
+    f = Integer.parseInt(str);
+    double hplanck = 6.626 * pow(10,-34);
+    E = hplanck * f;
+    //System.out.println("m= " + m2);
+    System.out.println("Energy is " + E + " Joules");
+    System.out.println("----------------------------------------------------");
+	}
+
+	private double pow(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class xsquared extends Formula{
+	public void calculate(){
+		System.out.println("This prints the inputted values of an x^2 function");
+		System.out.println("f(x)=x^2");
+		System.out.println("Enter range of x-values which you would like to graph");
+		System.out.println("(First type the lower x-value, then the higher one)");
+		
+	}
+}

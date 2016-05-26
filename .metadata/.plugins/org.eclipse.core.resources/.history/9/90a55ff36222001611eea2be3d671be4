@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		int a = pow(10,-34)
+		System.out.println(a);
+
+	}
+
+	private static int pow(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

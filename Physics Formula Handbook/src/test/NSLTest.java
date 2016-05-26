@@ -1,0 +1,36 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NSLTest {
+
+	@Test
+	public void testForce() {
+		NSL test = new NSL();
+		int result = test.Force(12, 4);
+		assertEquals(48,result);
+	}
+
+	@Test
+	public void testForceZero() {
+		NSL test = new NSL();
+		int result = test.Force(0, 4);
+		assertEquals(0,result);
+	}
+	
+	@Test
+	public void testForceZero1() {
+		NSL test = new NSL();
+		int result = test.Force(12, 0);
+		assertEquals(0,result);
+	}
+	
+	@Test
+	public void testForceBigNum() {
+		NSL test = new NSL();
+		int result = test.Force(2000,4);
+		assertEquals(8000,result);
+	}
+}

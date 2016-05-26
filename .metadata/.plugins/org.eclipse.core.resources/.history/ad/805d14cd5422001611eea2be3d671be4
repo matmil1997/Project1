@@ -1,0 +1,121 @@
+import java.util.Scanner;
+
+public class Main {
+
+       public static void main(String[] args) {
+              System.out.println("Welcome to the Physics Formula Handbook by Matija Milenovic 2016");
+              System.out.println(" ");
+              System.out.println("(Version still in beta, integer inputs only for now)");
+              System.out.println(" ");
+              System.out.println("----------------------------------------------------");
+              System.out.println(" ");
+              System.out.println("Please enter the name of a physics formula");
+              System.out.println("A. Newton's Second Law");
+              System.out.println("B. Momentum Formula");
+              System.out.println("C. Einstein's Equation");
+              System.out.println("D. Kinetic Energy Formula");
+              System.out.println("E. Newton's Law of Gravitation");
+              System.out.println("F. Ohm's Law");
+              System.out.println("G. Area of a circle");
+              System.out.println("H. Energy of a Photon");
+              System.out.println("Y. Names and units of variables");
+              System.out.println("Z. List of constants");
+              System.out.println("----------------------------------------------------");
+              
+              String reply;
+              do{
+              
+              // Scan
+              Scanner input = new Scanner(System.in);
+              String letter=input.nextLine();
+
+              Formula f;
+              //System.out.println(letter);
+              
+              switch(letter){
+              
+              case "A" : 
+            	  f = new NewtonsSecondLaw();
+            	  f.calculate();
+            	  Scanner input1 = new Scanner(System.in);
+                  reply=input.nextLine();
+                     break;
+                     
+              case "B" :
+                  f = new Momentum();
+                  f.calculate();
+                     break; 
+                     
+              case "C" :
+                  f = new Einstein();
+                  f.calculate();
+                     break;
+                     
+              case "D" :
+            	  f = new Kinetic();
+            	  f.calculate();
+            	  	break;
+                     
+              case "E" :
+            	  f = new Gravitation();
+            	  f.calculate();
+                     break;
+                     
+              case "F" : 
+            	  f = new Ohm();
+            	  f.calculate();
+                     break;
+                     
+              case "G" : 
+            	  f = new AreaCircle();
+            	  f.calculate();
+                     break;
+                     
+              case "H" :
+            	  f = new Photon();
+            	  f.calculate();
+            	  	break;
+                     
+              case "Y" :
+                     System.out.println("Here is a list of the names and units of variables:");
+                     System.out.println("F = Force = kg m/s^2");
+                     System.out.println("m/M = Mass = kg");
+                     System.out.println("a = Acceleration = m/s^2");
+                     System.out.println("p = Momentum = kg m/s");
+                     System.out.println("v = Velocity = m/s");
+                     System.out.println("E = Energy = J");
+                     System.out.println("r = Radius = m");
+                     System.out.println("V = Potential Difference (Voltage) = Volts");
+                     System.out.println("I = Current = Amps");
+                     System.out.println("R = Resistance = Ohms");
+                     System.out.println("A = Area = m^2");
+                     break;
+                     
+                     
+              case "Z" :
+                     System.out.println("Here is a list of the constants used in this program:");
+                     System.out.println(">>Newton's Gravitational Constant, G, 6.67*10^-11 m^3 kg^-1 s^-2");
+                     System.out.println(">>Speed of light, c, 3*10^8 m/s");
+                     System.out.println(">>Pi, 3.14");
+                     System.out.println("----------------------------------------------------");
+                     break;
+                     
+                     
+              default : 
+                     System.out.println("Your input isn't on the list of options :(");
+                     System.out.println("(See table of contents for available options)");
+                     System.out.println("----------------------------------------------------");
+              
+              }
+              
+           }  while (reply == "Y");
+
+       }
+
+       private static int pow(double n, int j) {
+              // TODO Auto-generated method stub
+              return 0;
+       }
+
+}
+

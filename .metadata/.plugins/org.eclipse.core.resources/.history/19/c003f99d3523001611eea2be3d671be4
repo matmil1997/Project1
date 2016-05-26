@@ -1,0 +1,16 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class addTest {
+
+	@Test
+	public void test() {
+		Junit test = new Junit();
+		int result = test.add(9, 10);
+		assertEquals(19,result);
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int reply = 1;
+		System.out.println("This is where the program would be");
+		System.out.println("Output of program goes here");
+		System.out.println("Would you like to repeat the program? 1 to repeat");
+		Scanner input = new Scanner(System.in);
+        String str = input.nextLine();
+        System.out.println("Reply is " + str);
+        reply = Integer.parseInt(str);
+        if (reply != 1){
+        	break;
+        }
+	}
+}

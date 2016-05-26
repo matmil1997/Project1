@@ -1,0 +1,16 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ExampleTest {
+
+	@Test
+	public void test() {
+		Junit test = new Junit();
+		String result = concatenate.test("one", "two");
+		assertEquals("onetwo", result);
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a value");
+		int x;
+		Scanner input = new Scanner(System.in);
+        String str = input.nextLine();
+        x = Integer.parseInt(str);
+		do {
+			System.out.println("x=" + x);
+			System.out.println("Would you like to enter another value?");
+			String str1 = input.nextLine();
+			int y = Integer.parseInt(str1);
+			if (y==1){
+				break;
+			}
+		} while (x<10);
+	}
+
+}

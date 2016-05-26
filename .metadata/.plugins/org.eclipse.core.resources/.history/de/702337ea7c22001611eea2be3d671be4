@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Einstein extends Formula{
+	public void calculate(){
+		System.out.println("This formula is Einstein's mass-energy equivelance formula:");
+        System.out.println("E=mc^2");
+        System.out.println("Enter value for m");
+        double E;
+        int m2;
+        
+        double csq= 9E16;
+        E = m2 * csq;
+        System.out.println("Energy is " + E + " Joules");
+        System.out.println("----------------------------------------------------");
+        //System.out.println("Would you like to use another formula? Type Y or N ");
+
+	}
+
+}

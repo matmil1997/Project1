@@ -1,0 +1,16 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class NSLTest {
+
+	@Test
+	public void testForce() {
+		NSL test = new NSL();
+		int result = test.Force(12, 4);
+		assertEquals(48,result);
+	}
+
+}

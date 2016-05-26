@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class NewtonsSecondLaw extends Formula {
+   public void calculate() {
+       System.out.println("This formula is Newton's Second Law:");
+       System.out.println("F=ma");
+       System.out.println("Enter values for m & a");
+       int F;
+       int m;
+       Scanner input = new Scanner(System.in);
+       String str = input.nextLine();
+       System.out.println("m = " + str);
+       m = Integer.parseInt(str);
+       int a;
+       String str1 = input.nextLine();
+       a = Integer.parseInt(str1);
+       F = m*a;
+       System.out.println("m= " + m + " a= " + a);
+       System.out.println("Force is " + F + " Newtons");
+       System.out.println("----------------------------------------------------");	   
+   }
+}

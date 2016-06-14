@@ -8,6 +8,8 @@ public class xsquared extends Formula{
 		int xmin;
 		Scanner input = new Scanner(System.in);
         String str = input.nextLine();
+        
+        try {
         xmin = Integer.parseInt(str);
         System.out.println("Min. x-value = " + str);
 		int xmax;
@@ -24,5 +26,9 @@ public class xsquared extends Formula{
 	    }
 	    System.out.println("----------------------------------------------------");
 	    System.out.println("Enter another letter or type Exit to terminate");
+	
+	} catch (Exception e){
+		System.out.println("Enter an integer next time please.");
+	}
 	}
 }
